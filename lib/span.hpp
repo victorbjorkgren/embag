@@ -1520,7 +1520,8 @@ using span_lite::make_span;
 
 #endif // #if span_FEATURE_TO_STD( MAKE_SPAN )
 
-#if span_CPP11_OR_GREATER && span_FEATURE( BYTE_SPAN ) && ( span_HAVE( BYTE ) || span_HAVE( NONSTD_BYTE ) )
+#if 0  // Disabled due to C++20 compatibility issues
+// Original: #if span_CPP11_OR_GREATER && span_FEATURE( BYTE_SPAN ) && ( span_HAVE( BYTE ) || span_HAVE( NONSTD_BYTE ) )
 
 namespace nonstd {
 namespace span_lite {
@@ -1550,7 +1551,8 @@ using span_lite::byte_span;
 
 #endif // span_FEATURE( BYTE_SPAN )
 
-#if span_HAVE( STRUCT_BINDING )
+#if 0  // Disabled due to C++20 compatibility issues  
+// Original: #if span_HAVE( STRUCT_BINDING )
 
 #if   span_CPP14_OR_GREATER
 # include <tuple>
